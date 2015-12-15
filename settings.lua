@@ -1,20 +1,20 @@
 --
 -- print (" ---- Overrider christmas_craft = true! ---- ")
 --
--- minetest.register_node(":default:dirt_with_grass", {
--- 	description = "Dirt with Grass",
--- 	tiles = {"snow.png", "default_dirt.png", "grass_w_snow_side.png"},
--- 	is_ground_content = true,
--- 	groups = {crumbly=3,soil=1},
--- 	drop = {
--- 		max_items = 2, items = {
--- 			{items = {'default:dirt'},	rarity = 0,},
--- 			{items = {'christmas_craft:snowball'},	rarity = 0,},
--- 		}},
--- 	sounds = default.node_sound_dirt_defaults({
--- 		footstep = {name="default_grass_footstep", gain=0.4},
--- 	}),
--- })
+minetest.register_node(":default:dirt_with_grass", {
+	description = "Dirt with Grass",
+	tiles = {"snow.png", "default_dirt.png", "grass_w_snow_side.png"},
+	is_ground_content = true,
+	groups = {crumbly=3,soil=1},
+	drop = {
+		max_items = 2, items = {
+			{items = {'default:dirt'},	rarity = 0,},
+			{items = {'christmas_craft:snowball'},	rarity = 0,},
+		}},
+	sounds = default.node_sound_dirt_defaults({
+		footstep = {name="default_grass_footstep", gain=0.4},
+	}),
+})
 --
 -- minetest.register_node(":default:leaves", {
 -- 	description = "Leaves",
